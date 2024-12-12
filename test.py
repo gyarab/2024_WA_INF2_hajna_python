@@ -39,5 +39,6 @@ if __name__ == "__main__":
         print(is_prime(4))
         print(is_prime(1))
         print(is_prime(-1))
+        print(is_prime(0.9))
     except ValueError as e:
         print(e)
