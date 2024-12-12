@@ -19,10 +19,10 @@ def test_fibonacci(n):
         return None
 
 def is_prime(n):
-    if not isinstance(n, int):
+    if not isinstance(n, int) or n < 1:
         raise ValueError("n must be an integer")
     if n == 0:
-        raise ValueError("n must not be zero")
+        return False
     if n < 2:
         return False
     for i in range(2, int(n**0.5) + 1):
