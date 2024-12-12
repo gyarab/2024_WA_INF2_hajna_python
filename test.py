@@ -20,7 +20,7 @@ def test_fibonacci(n):
 
 def is_prime(n):
     if not isinstance(n, int) or n < 2:
-        return False
+        raise ValueError("n must be an integer greater than 1")
     for i in range(2, int(n**0.5) + 1):
         if n % i == 0:
             return False
@@ -32,5 +32,9 @@ if __name__ == "__main__":
     test_fibonacci(0)
     test_fibonacci(1)
     test_fibonacci(5)
-    print(is_prime(11))
-    print(is_prime(4)) 
+    try:
+        print(is_prime(11))
+        print(is_prime(4))
+        print(is_prime(-1))
+    except ValueError as e:
+        print(e)
