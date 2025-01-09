@@ -30,6 +30,19 @@ def is_prime(n):
             return False
     return True
 
+def primes_in_range(a, b):
+    if not isinstance(a, int) or not isinstance(b, int):
+        raise ValueError("Both a and b must be integers")
+    if a < 1 or b < 1:
+        raise ValueError("Both a and b must be positive integers")
+    
+    start, end = min(a, b), max(a, b)
+    primes = []
+    for num in range(start, end + 1):
+        if is_prime(num):
+            primes.append(num)
+    return primes
+
 if __name__ == "__main__":
     test_fibonacci(10)
     test_fibonacci(-1)
@@ -42,5 +55,12 @@ if __name__ == "__main__":
         print(is_prime(1))
         print(is_prime(-1))
         print(is_prime(0.9))
+    except ValueError as e:
+        print(e)
+    try:
+        print(primes_in_range(10, 20))
+        print(primes_in_range(20, 10))
+        print(primes_in_range(1, 10))
+        print(primes_in_range(10, -5))
     except ValueError as e:
         print(e)
