@@ -43,6 +43,11 @@ def primes_in_range(a, b):
             primes.append(num)
     return primes
 
+def split_into_threes(text):
+    if not isinstance(text, str):
+        raise ValueError("text must be a string")
+    return [text[i:i+3] for i in range(0, len(text), 3)]
+
 if __name__ == "__main__":
     test_fibonacci(10)
     test_fibonacci(-1)
@@ -62,5 +67,12 @@ if __name__ == "__main__":
         print(primes_in_range(20, 10))
         print(primes_in_range(1, 10))
         print(primes_in_range(10, -5))
+    except ValueError as e:
+        print(e)
+    try:
+        print(split_into_threes("abcdefghij"))
+        print(split_into_threes("abcdefghi"))
+        print(split_into_threes("ab"))
+        print(split_into_threes(123))
     except ValueError as e:
         print(e)
