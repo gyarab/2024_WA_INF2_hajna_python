@@ -48,6 +48,25 @@ def split_into_threes(text):
         raise ValueError("text must be a string")
     return [text[i:i+3] for i in range(0, len(text), 3)]
 
+def ceasar_encode(text):
+    if not isinstance(text, str):
+        raise ValueError("text must be a string")
+    
+    encoded_text = []
+    for char in text:
+        if char.isalpha():
+            shift = 3
+            if char.islower():
+                encoded_text.append(chr((ord(char) - ord('a') + shift) % 26 + ord('a')))
+            else:
+                encoded_text.append(chr((ord(char) - ord('A') + shift) % 26 + ord('A')))
+        elif char in [' ', '.']:
+            encoded_text.append(char)
+        else:
+            raise ValueError("text contains invalid characters")
+    
+    return ''.join(encoded_text)
+
 if __name__ == "__main__":
     test_fibonacci(10)
     test_fibonacci(-1)
@@ -74,5 +93,11 @@ if __name__ == "__main__":
         print(split_into_threes("abcdefghi"))
         print(split_into_threes("ab"))
         print(split_into_threes(123))
+    except ValueError as e:
+        print(e)
+    try:
+        print(ceasar_encode("Hello World."))
+        print(ceasar_encode("abc XYZ."))
+        print(ceasar_encode("Invalid!"))
     except ValueError as e:
         print(e)
