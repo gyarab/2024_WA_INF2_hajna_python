@@ -116,6 +116,7 @@ def morse(text):
 
 if __name__ == "__main__":
     print(morse("Hana"))
+    print(morse("Příliš žluťoučký kůň úpěl ďábelské ódy 123"))
     test_fibonacci(10)
     test_fibonacci(-1)
     test_fibonacci(0)
