@@ -48,7 +48,7 @@ def split_into_threes(text):
         raise ValueError("text must be a string")
     return [text[i:i+3] for i in range(0, len(text), 3)]
 
-def ceasar_encode(text):
+def caesar_encode(text):
     if not isinstance(text, str):
         raise ValueError("text must be a string")
     
@@ -96,8 +96,8 @@ if __name__ == "__main__":
     except ValueError as e:
         print(e)
     try:
-        print(ceasar_encode("Hello World."))
-        print(ceasar_encode("abc XYZ."))
-        print(ceasar_encode("Invalid!"))
+        print(caesar_encode("Hello World."))
+        print(caesar_encode("abc XYZ."))
+        print(caesar_encode("Invalid!"))
     except ValueError as e:
         print(e)
