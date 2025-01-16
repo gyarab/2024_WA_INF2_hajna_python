@@ -55,6 +55,8 @@ def caesar_encode(text):
     for char in text:
         if not (char.isalpha() or char in [' ', '.']):
             raise ValueError("text contains invalid characters")
+        if not char.isascii():
+            raise ValueError("text contains non-ASCII characters")
     
     encoded_text = []
     for char in text:
