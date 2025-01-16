@@ -103,6 +103,6 @@ if __name__ == "__main__":
         print(caesar_encode("Hello World."))
         print(caesar_encode("abc XYZ."))
         print(caesar_encode("Invalid!"))
-        print(caesar_encode("žžššš"))
+        print(caesar_encode("áž"))
     except ValueError as e:
         print(e)
