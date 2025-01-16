@@ -53,8 +53,8 @@ def caesar_encode(text):
         raise ValueError("text must be a string")
     
     for char in text:
-        if not (char.isalpha() or char == '.' or char == ' '):
-            raise ValueError("text must only contain letters a-z, A-Z, dot, and space")
+        if not (char.isascii() and (char.isalpha() or char == '.' or char == ' ')):
+            raise ValueError("text must only contain English letters a-z, A-Z, dot, and space")
     
     encoded_text = []
     for char in text:
