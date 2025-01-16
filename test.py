@@ -52,6 +52,10 @@ def caesar_encode(text):
     if not isinstance(text, str):
         raise ValueError("text must be a string")
     
+    for char in text:
+        if not (char.isalpha() or char in [' ', '.']):
+            raise ValueError("text contains invalid characters")
+    
     encoded_text = []
     for char in text:
         if char.isalpha():
@@ -60,10 +64,8 @@ def caesar_encode(text):
                 encoded_text.append(chr((ord(char) - ord('a') + shift) % 26 + ord('a')))
             else:
                 encoded_text.append(chr((ord(char) - ord('A') + shift) % 26 + ord('A')))
-        elif char in [' ', '.']:
-            encoded_text.append(char)
         else:
-            raise ValueError("text contains invalid characters")
+            encoded_text.append(char)
     
     return ''.join(encoded_text)
 
@@ -99,5 +101,6 @@ if __name__ == "__main__":
         print(caesar_encode("Hello World."))
         print(caesar_encode("abc XYZ."))
         print(caesar_encode("Invalid!"))
+        print(caesar_encode("žžššš"))
     except ValueError as e:
         print(e)
