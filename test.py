@@ -144,11 +144,7 @@ if __name__ == "__main__":
         print(e)
     try:
         print(caesar_encode("Hello World."))
-        print(caesar_encode("abc XYZ."))
-        print(caesar_encode("Invalid!"))
         print(caesar_encode("áž"))
-        print(caesar_decode("Khoor Zruog."))
-        print(caesar_decode("def ABC."))
     except ValueError as e:
         print(e)
     try:
