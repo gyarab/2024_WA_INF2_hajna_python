@@ -69,6 +69,27 @@ def caesar_encode(text):
     
     return ''.join(encoded_text)
 
+def caesar_decode(code):
+    if not isinstance(code, str):
+        raise ValueError("code must be a string")
+    
+    for char in code:
+        if not (char.isascii() and (char.isalpha() or char == '.' or char == ' ')):
+            raise ValueError("code must only contain English letters a-z, A-Z, dot, and space")
+    
+    decoded_text = []
+    for char in code:
+        if char.isalpha():
+            shift = 3
+            if char.islower():
+                decoded_text.append(chr((ord(char) - ord('a') - shift) % 26 + ord('a')))
+            else:
+                decoded_text.append(chr((ord(char) - ord('A') - shift) % 26 + ord('A')))
+        else:
+            decoded_text.append(char)
+    
+    return ''.join(decoded_text)
+
 if __name__ == "__main__":
     test_fibonacci(10)
     test_fibonacci(-1)
@@ -102,5 +123,7 @@ if __name__ == "__main__":
         print(caesar_encode("abc XYZ."))
         print(caesar_encode("Invalid!"))
         print(caesar_encode("áž"))
+        print(caesar_decode("Khoor Zruog."))
+        print(caesar_decode("def ABC."))
     except ValueError as e:
         print(e)
