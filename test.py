@@ -115,6 +115,7 @@ def morse(text):
     return ' '.join(morse_text)
 
 if __name__ == "__main__":
+    print(morse("Hana"))
     test_fibonacci(10)
     test_fibonacci(-1)
     test_fibonacci(0)
