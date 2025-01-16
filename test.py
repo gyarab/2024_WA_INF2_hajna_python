@@ -90,6 +90,30 @@ def caesar_decode(code):
     
     return ''.join(decoded_text)
 
+MORSE_CODE_DICT = {
+    'a': '.-', 'b': '-...', 'c': '-.-.', 'd': '-..', 'e': '.', 'f': '..-.', 'g': '--.', 'h': '....', 'i': '..', 'j': '.---',
+    'k': '-.-', 'l': '.-..', 'm': '--', 'n': '-.', 'o': '---', 'p': '.--.', 'q': '--.-', 'r': '.-.', 's': '...', 't': '-',
+    'u': '..-', 'v': '...-', 'w': '.--', 'x': '-..-', 'y': '-.--', 'z': '--..', '0': '-----', '1': '.----', '2': '..---',
+    '3': '...--', '4': '....-', '5': '.....', '6': '-....', '7': '--...', '8': '---..', '9': '----.'
+}
+
+def morse(text):
+    if not isinstance(text, str):
+        raise ValueError("text must be a string")
+    
+    text = text.lower()
+    morse_text = []
+    
+    for char in text:
+        if char in 'áäčďéěíňóöřšťúůüýž':
+            char = 'a' if char in 'áä' else 'c' if char == 'č' else 'd' if char == 'ď' else 'e' if char in 'éě' else 'i' if char == 'í' else 'n' if char == 'ň' else 'o' if char in 'óö' else 'r' if char == 'ř' else 's' if char == 'š' else 't' if char == 'ť' else 'u' if char in 'úůü' else 'y' if char == 'ý' else 'z'
+        if char in MORSE_CODE_DICT:
+            morse_text.append(MORSE_CODE_DICT[char])
+        elif char == ' ':
+            morse_text.append('/')
+    
+    return ' '.join(morse_text)
+
 if __name__ == "__main__":
     test_fibonacci(10)
     test_fibonacci(-1)
@@ -125,5 +149,11 @@ if __name__ == "__main__":
         print(caesar_encode("áž"))
         print(caesar_decode("Khoor Zruog."))
         print(caesar_decode("def ABC."))
+    except ValueError as e:
+        print(e)
+    try:
+        print(morse(123))
+        print(morse("Hello World"))
+        print(morse("Příliš žluťoučký kůň úpěl ďábelské ódy 123"))
     except ValueError as e:
         print(e)
