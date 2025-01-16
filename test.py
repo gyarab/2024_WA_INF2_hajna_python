@@ -21,7 +21,7 @@ def test_fibonacci(n):
 def is_prime(n):
     if not isinstance(n, int) or n < 1:
         raise ValueError("n must be an integer")
-    if n == 0:
+    if n == 1:
         return False
     if n < 2:
         return False
@@ -53,10 +53,8 @@ def caesar_encode(text):
         raise ValueError("text must be a string")
     
     for char in text:
-        if not (char.isalpha() or char in [' ', '.']):
-            raise ValueError("text contains invalid characters")
-        if not char.isascii():
-            raise ValueError("text contains non-ASCII characters")
+        if not (char.isalpha() or char == '.' or char == ' '):
+            raise ValueError("text must only contain letters a-z, A-Z, dot, and space")
     
     encoded_text = []
     for char in text:
