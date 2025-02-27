@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ article.title }}</title>
+</head>
+<style>
+    body {
+        background-color: rgb(251, 201, 240);
+    }
+    h1 {
+        font-size: 2.5em;
+        text-align: center;
+        margin-top: 20px;
+        font-family: 'Georgia', serif;
+        color:rgb(122, 7, 137);
+    }
+    img {
+        align-items: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    a{
+        color: rgb(194, 79, 150);
+        text-decoration: none;
+    }
+    a:hover{
+        color: rgb(174, 49, 178);
+        text-decoration: none;
+    }
+</style>
+<body>
+    <h1>{%block header %}{% endblock %} </h1>
+    <main>
+        {% block main %}{% endblock %}
+    </main>
+</body>
+</html></html>

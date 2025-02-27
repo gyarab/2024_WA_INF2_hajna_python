@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Koh Samui",
+        "perex": "V tomto přehledu bych Vás rád seznámil s pěti nejkrásnějšími místy ostrova Koh Samui v Thajsku, které musíte vidět. Na ostrově jsem strávil pěkný kousek života a objel jsem ho několikrát skrz na skrz. Samozřejmě se jedná jen o můj subjektivní názor, ale jsem přesvědčený, že nikdo těmito místy nepohrdne.",
+        "image": "https://media.istockphoto.com/id/115602713/cs/fotografie/slunn%C3%A1-pl%C3%A1%C5%BE-v-n%C3%A1rodn%C3%ADm-parku-angthong-v-koh-samui-thajsko.jpg?s=612x612&w=0&k=20&c=OWkNVTJy9Zif5IDkuPsbOu4zwTloVPI0JJKFeMxKeEk=",
+        "link": "https://www.digitramp.cz/5-nejkrasnejsich-mist-ostrova-koh-samui/"
+    },
+    {
+        "title": "Kyoto",
+        "perex": "Kjóto, oficiálně Kyoto City, leží na ostrově Honšú a podle populace patří mezi deset největších japonských měst. V letech 749 až 1868 bylo Kjóto hlavním městem Japonska a sídlem vládců. Díky tomu je dnes plné paláců, vil, zachovalých historických čtvrtí, chrámů, svatyní a stylových zahrad.",
+        "image": "https://t3.ftcdn.net/jpg/03/08/47/16/360_F_308471636_0mGYhLzK75UoIIxG5JOT5XgeQXKhhPPX.jpg",
+        "link": "https://zahorizont.cz/14-mist-ktere-navstivit-v-kjotu/"
+    },
+    {
+        "title": "Venezia",
+        "perex": "Benátky jsou vedle Florencie nebo Milána jedním z nejkrásnějších měst v celé Itálii. V tomto článku vám představíme jednak ty nejvýznamnější benátské památky, jednak další zajímavá místa, která se dozajista vyplatí navštívit.",
+        "image": "https://t4.ftcdn.net/jpg/02/12/47/95/360_F_212479575_fhETxBvCGbAdcIYFl8askaBiKffIFtzl.jpg",
+        "link": "https://objev-svet.cz/evropa/italie/10-mist-ktera-navstivit-v-benatkach/8126/"
+    },
+    {
+        "title": "Vídeň",
+        "perex": "Hlavní město někdejšího téměř padesátimilionového habsburského impéria nese stopy své slavné historie dodnes. V mnohých z nás Vídeň vyvolá představy o honosných reprezentativních budovách, kočárech tažených párem běloušů, dámách v rukavičkách oblečených do dlouhých šatů s „honzíkem“, Sacher dortu a voňavé kávě. A skutečnost? Není tak daleko od představ…",
+        "image": "https://t4.ftcdn.net/jpg/02/78/47/03/360_F_278470364_oLtBQcOFPtyy07N4qsdSnrL2C48Ze5iJ.jpg",
+        "link": "https://www.radynacestu.cz/magazin/10-nej-pamatek-vidne-ktere-si-nesmite-nechat-ujit/"
+    },
+    {
+        "title": "Malbork",
+        "perex": "Pomořské vojvodství, které je ze všech 16 polských vojvodství nejseverněji položené, nabízí spoustu zajímavých míst, která byste během své návštěvy neměli vynechat. Jedním z nich je bezpochyby čtyřicetitisícové město Malbork, ležící na řece Nogat, přibližně hodinu jízdy na jihovýchod od Gdaňsku.",
+        "image": "https://t3.ftcdn.net/jpg/00/67/41/82/360_F_67418264_loUxO1XbzL3ApslyNgBY812xDsy9E40q.jpg",
+        "link": "https://www.radynacestu.cz/magazin/malbork/"
+    },
+    {
+        "title": "Rio de Janeiro",
+        "perex": "Kam se vypravit kromě slavného stadionu Maracanã ve městě, které proslavily karnevaly, samba a nádherné pláže? Tady je deset tipů pro turisty, ať už se tam vydají na olympiádu anebo kdykoliv jindy.",
+        "image": "https://media.istockphoto.com/id/534215078/cs/fotografie/leteck%C3%A1-ant%C3%A9na-rio-de-janeiro.jpg?s=612x612&w=0&k=20&c=JtkQyUfJSz9_HCQbywP13vzgG6tAMBx5StdAAgEGfwI=",
+        "link": "https://www.cksen.cz/blog/deset-nejlepsich-turistickych-zazitku-v-meste-bohu-rio-de-janeiru/"
+    },
+    {
+        "title": "Athény",
+        "perex": "Kdybyste v Athénách nějakou dobu žili, určitě byste se sami sebe ptali, co vlastně láká do Athén téměř 4 miliony turistů ročně? Vždyť současné Athény jako město nejsou příliš atraktivní svou architekturou, která zažila zejména díky masivnímu přílivu imigrantů ve 20. století doslova estetický šok, ale ani kulturními akcemi. Ale mají Akropolis...",
+        "image": "https://t3.ftcdn.net/jpg/02/63/84/34/360_F_263843490_K2a0s1fyL5Gp1pwWLH7xPrFHntKJgKor.jpg",
+        "link": "https://www.radynacestu.cz/magazin/zajimava-mista-athen/"
+    },
+    {
+        "title": "Edinburgh",
+        "perex": "O Edinburghu se říká, že je výkladní skříní Skotska. Sir Walter Scott Edinburgh nazval: „mým romantickým městem“. Snad měl pravdu, hlavní město Skotska se totiž rozprostírá na skalnatých výběžcích, které vznikly sopečnou činností a teď se hrdě tyčí nad rovinatou oblastí Lothian a na druhé straně nad mořskou zátokou Firth of Forth. Romantika tu doslova stříká z každého koutu i v té nejvíce zastrčené uličce.",
+        "image": "https://media.istockphoto.com/id/1150506039/photo/view-from-the-calton-hill-on-princes-street-in-edinburgh-scotland-uk.jpg?s=612x612&w=0&k=20&c=N-eRU7lF6BlP8Sb5IJtAvR5WxNFzQnmTo6W2tEOGL3Q=",
+        "link": "https://www.radynacestu.cz/magazin/edinburgh/"
+    },
+    {
+        "title": "Polignano a Mare",
+        "perex": "Víte, co se nachází na mapě v samotném podpatku italské „boty“? Najdete tam další klenot Apulského regionu, a to rybářské městečko na pobřeží Jaderského moře, které je vystavěné na skalních útesech vysoko nad lámajícími se vlnami. Řeč je o krásném italském městu Polignano a Mare.",
+        "image": "https://media.istockphoto.com/id/1402238761/photo/polignano-a-mare-puglia-adriatic-sea-coastline-travel-spotlight-of-italy.jpg?s=612x612&w=0&k=20&c=4-yGy5EzViEGTIwt3fI7OVg137s3mGYT5owBgE_JHiY=",
+        "link": "https://loudavymkrokem.cz/polignano-a-mare/"
+    }
+]

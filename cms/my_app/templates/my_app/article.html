@@ -1,0 +1,9 @@
+{% extends "my_app/base.html" %}
+{% block header %}
+    <a href="/">Nejkrásnější místa světa</a>
+    <h1>{{ article.title }}</h1>
+{% endblock %}
+{% block main %} 
+    <img src="{{ article.image }}" alt="{{ article.title }}">
+    <p>{{ article.perex }}</p>
+{% endblock %}
