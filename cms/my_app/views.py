@@ -1,6 +1,7 @@
 import json
 from django.shortcuts import render
 from django.http import HttpResponse
+from my_app.models import Author, Book
 
 # Create your views here.
 
