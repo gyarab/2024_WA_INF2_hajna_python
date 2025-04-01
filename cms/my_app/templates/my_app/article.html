@@ -1,9 +1,20 @@
-{% extends "my_app/base.html" %}
+{% extends "content/base.html" %}
+
+
 {% block header %}
-    <a href="/">Nejkrásnější místa světa</a>
-    <h1>{{ article.title }}</h1>
+    {{ article.title }}
 {% endblock %}
-{% block main %} 
-    <img src="{{ article.image }}" alt="{{ article.title }}">
+
+{% block main %}
     <p>{{ article.perex }}</p>
+    <p><a href="/author/{{ article.author.id }}">{{ article.author.name }}</a> {{ article.author.email }}</p>
+    <p> 
+        <ul>
+            {% for category in article.categories.all %}
+                <li><a href="/category/{{ category.id }}">{{ category.name }}</a></li>
+            {% endfor %}
+        </ul>
+
+    </p>
+    <p>{{ article.content }}</p>
 {% endblock %}

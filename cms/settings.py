@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-n4sn=#u89ehvnfvrguph)s(nkv5=vxz+$)_yy1hmon!6!6@nx6'
+SECRET_KEY = 'django-insecure-nw@m)#hgtl+@kb0mkzkdnuw8equk51xg=8to32y(e@cm@dj-#9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'my_app.apps.MyAppConfig',
+    'content',
 ]
 
 MIDDLEWARE = [
@@ -48,10 +48,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-]
-
-FIXTURE_DIRS = [
-    BASE_DIR / "fixtures/",
 ]
 
 ROOT_URLCONF = 'cms.urls'
@@ -103,17 +99,6 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
-STATICFILES_DIRS = [
-    BASE_DIR / "static/",
-]
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 
 
 # Internationalization

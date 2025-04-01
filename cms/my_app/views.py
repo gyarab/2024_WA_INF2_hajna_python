@@ -1,25 +1,24 @@
-import json
 from django.shortcuts import render
 from django.http import HttpResponse
-from my_app.models import Author, Book
 
-# Create your views here.
+from .models import Article, Author, Category
+
+import json
 
 def homepage(request):
-    with open('articles.json', encoding='utf-8') as f:
-        articles = json.load(f)
-        
-    return render(request, 'my_app/homepage.html', {'articles': articles})
-    
-def article(request, id):
-    with open('articles.json', encoding='utf-8') as f:
-        articles = json.load(f)
-        
-    article = articles[id]
-    return render(request, 'my_app/article.html', {'article': article})
-    
-def hello(request):
-    return HttpResponse("Hello, Django!")
+    articles = Article.objects.order_by('title')
+    return render(request, 'content/homepage.html', {'articles': articles})
 
-def vynasob(request, a, b):
-    return HttpResponse(f'{a} * {b} = {a*b}')
+
+def article(request, id):
+    article = Article.objects.get(pk=id)
+
+    return render(request, 'content/article.html', {'article': article})
+
+def author(request, id):
+    author = Author.objects.get(pk=id)
+    return render(request, 'content/author.html', {'author': author})
+
+def category(request, id):
+    category = Category.objects.get(pk=id)
+    return render(request, 'content/category.html', {'category': category})

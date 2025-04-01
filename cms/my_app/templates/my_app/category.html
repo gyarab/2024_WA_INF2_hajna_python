@@ -2,14 +2,16 @@
 
 
 {% block header %}
-    Zpravy odevsad
+    Rubrika {{ category.name }}
 {% endblock %}
 
 
 {% block main %}
-    {% for article in articles %}
+    <p>
+        {{ category.description }}
+    </p>
+    {% for article in category.articles.all %}
         <a href="/article/{{ article.id }}"><h2>{{ article.title }}</h2></a>
-        
         <p>{{ article.date }}</p>
         <p>{{ article.perex }}</p>
     {% endfor %}
