@@ -37,8 +37,8 @@
         "model": "content.category",
         "pk": 3,
         "fields": {
-            "name": "Ekonomika",
-            "description": "Ekonomicke zpravy a tak podobne"
+            "name": "Lide",
+            "description": "Slavni lide a jejich zivoty"
         }
     },
     {
