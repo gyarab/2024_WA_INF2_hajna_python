@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\hana\OneDrive\Plocha\2024_WA_INF2_hajna_python\.venv
+set VIRTUAL_ENV=C:\Users\hana\2024_WA_INF2_hajna_python\.venv
 
 if not defined PROMPT set PROMPT=$P$G
 
