@@ -1,0 +1,18 @@
+{% extends "content/base.html" %}
+
+
+{% block header %}
+    Rubrika {{ category.name }}
+{% endblock %}
+
+
+{% block main %}
+    <p>
+        {{ category.description }}
+    </p>
+    {% for article in category.articles.all %}
+        <a href="/article/{{ article.id }}"><h2>{{ article.title }}</h2></a>
+        <p>{{ article.date }}</p>
+        <p>{{ article.perex }}</p>
+    {% endfor %}
+{% endblock %}

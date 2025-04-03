@@ -1,0 +1,76 @@
+[
+    {
+        "model": "content.author",
+        "pk": 1,
+        "fields": {
+            "name": "Leonardo Wilhelm DiCaprio",
+            "email": "leonardo@diCaprio.com",
+            "bio": "Leonardo DiCaprio je americký herec a producent, známý svou rolí v Titanic a The Revenant, za kterou získal Oscara. Aktivně podporuje ochranu životního prostředí a byl nominován na Oscara šestkrát."
+        }
+    },
+    {
+        "model": "content.author",
+        "pk": 2,
+        "fields": {
+            "name": "Adele Laurie Blue Adkins",
+            "email": "adele@music.com",
+            "bio": "Adele je britská zpěvačka, známá svou emotivní hudbou a silným hlasem. Její album 21 je jedno z nejprodávanějších alb všech dob a získala několik Grammy za hity jako Someone Like You."
+        }
+    },
+    {
+        "model": "content.category",
+        "pk": 1,
+        "fields": {
+            "name": "Herectví",
+            "description": "Herecke vykony a zajimavosti ze sveta filmu"
+        }
+    },
+    {
+        "model": "content.category",
+        "pk": 2,
+        "fields": {
+            "name": "Zpev",
+            "description": "Pevecke vykony a zajimavosti ze sveta hudby"
+        }
+    },
+    {
+        "model": "content.category",
+        "pk": 3,
+        "fields": {
+            "name": "Ekonomika",
+            "description": "Ekonomicke zpravy a tak podobne"
+        }
+    },
+    {
+        "model": "content.article",
+        "pk": 1,
+        "fields": {
+            "title": "Info o Adele",
+            "perex": "„Adele je britská zpěvačka a skladatelka, která se proslavila svým silným hlasem a emotivními písněmi. Její album 21 se stalo jedním z nejprodávanějších alb všech dob, a to díky hitům jako Rolling in the Deep a Someone Like You. Adele získala mnoho ocenění, včetně několika Grammy. Je známá svou schopností propojit osobní zážitky s hudbou, což její fanoušci velmi oceňují.",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut ultricies tincidunt, nisl velit ultricies nunc, id tincidunt nisl mi at nunc. Sed euismod, nunc ut ultricies tincidunt, nisl velit ultricies nunc, id tincidunt nisl mi at nunc.",
+            "date": "2024-12-5T19:15:00Z",
+            "author": 2,
+            "counter": 0,
+            "categories": [
+                2,
+                3
+            ]
+        }
+    },
+    {
+        "model": "content.article",
+        "pk": 2,
+        "fields": {
+            "title": "Info o Leonardovi DiCapriovi",
+            "perex": "Leonardo DiCaprio je americký herec, filmový producent a environmentalista. Byl nominován na Oscara šestkrát, než v roce 2016 konečně vyhrál za roli v dramatu The Revenant. DiCaprio je známý pro svou spolupráci s režisérem Martinem Scorsesem v několika filmech, jako Gangs of New York, The Aviator, The Wolf of Wall Street, a samozřejmě Titanic, který ho proslavil. Kromě své herecké kariéry se DiCaprio aktivně angažuje v ochraně životního prostředí a vlastnictví několika organizací podporujících ochranu přírody.",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut ultricies tincidunt, nisl velit ultricies nunc, id tincidunt nisl mi at nunc. Sed euismod, nunc ut ultricies tincidunt, nisl velit ultricies nunc, id tincidunt nisl mi at nunc.",
+            "date": "2024-12-8T14:09:00Z",
+            "author": 2,
+            "counter": 0,
+            "categories": [
+                1,
+                3
+            ]
+        }
+    }
+]
